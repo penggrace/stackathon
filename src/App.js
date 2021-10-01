@@ -1,4 +1,5 @@
 import "./App.css";
+import ColorAPI from "./colormindAPI";
 
 function App() {
     return (
@@ -10,22 +11,25 @@ function App() {
             </div>
             <div>
                 <hr />
-                <button class="star" id="star1">
+                <button className="star" id="star1">
                     ★
                 </button>
-                <button class="star" id="star2">
+                <button className="star" id="star2">
                     ★
                 </button>
-                <button class="star" id="star3">
+                <button className="star" id="star3">
                     ★
                 </button>
-                <button class="star" id="star4">
+                <button className="star" id="star4">
                     ★
                 </button>
-                <button class="star" id="star5">
+                <button className="star" id="star5">
                     ★
                 </button>
                 <hr />
+            </div>
+            <div>
+                <ColorAPI />
             </div>
         </div>
     );
