@@ -13,6 +13,7 @@ class ColorAPI extends React.Component {
         http.onreadystatechange = function () {
             if (http.readyState === 4 && http.status === 200) {
                 var palette = JSON.parse(http.responseText).result;
+                console.log(palette)
             }
         };
 
