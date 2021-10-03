@@ -6,7 +6,7 @@ function App() {
         <div className="App">
             <div>
                 <header className="App-header">
-                    <h1>AI Color Palette Generator</h1>
+                    <h1>Machine-Learning Color Palette Generator</h1>
                 </header>
             </div>
             <div>

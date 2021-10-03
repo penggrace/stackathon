@@ -21,8 +21,15 @@ class ColorAPI extends React.Component {
         http.send(JSON.stringify(data));
     }
     render() {
-      return <h1> hi
-      </h1>;
+      return (
+          <div>
+              <div className="palette" id="first"></div>
+              <div className="palette" id="second"></div>
+              <div className="palette" id="third"></div>
+              <div className="palette" id="fourth"></div>
+              <div className="palette" id="fifth"></div>
+          </div>
+      );
     }
 }
 

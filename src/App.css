@@ -25,3 +25,11 @@
   outline: none;
   padding: 0;
 }
+
+.palette {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: solid;
+  border-radius: 50%;
+}
