@@ -1,4 +1,6 @@
 import React from "react";
+import "./App.css";
+
 
 const Card = ({ palette }) => {
     let hex = "";
@@ -13,11 +15,14 @@ const Card = ({ palette }) => {
     return (
         <div className="card-container">
             <div className="color" style={{ backgroundColor: `#${hex}` }}></div>
-            <div className="hex">#{hex}</div>
-            <div
-                className="palette"
-                style={{ backgroundColor: `#${hex}` }}
-            ></div>
+            <div>
+                <div className="hex">#{hex}
+                </div>
+                <div
+                    className="palette"
+                    style={{ backgroundColor: `#${hex}` }}
+                ></div>
+            </div>
         </div>
     );
 };

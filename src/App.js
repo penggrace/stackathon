@@ -2,6 +2,8 @@ import "./App.css";
 import React, { useState } from "react";
 import ColorAPI from "./colormindAPI";
 import axios from "axios";
+// const {brain} = require("brain.js");
+
 
 function App() {
   const [palette, setPalette] = useState([
@@ -14,19 +16,21 @@ function App() {
 
   const onClick = async () => {
       const url =
-          "http://colormind.io/api/";
+          "https://colormind.io/api/";
       const data = {
           model: "default",
       };
       const headers = {
           "Content-Type": "text/plain",
       };
-      const colorPalette = await axios
+    const colorPalette = await axios
           .post(url, data, { headers })
-          .then((res) => res.data.result); // array of 5
-      console.log(colorPalette);
+          .then((res) => res.data.result);
       setPalette(colorPalette);
   };
+
+
+
     return (
         <div className="App">
             <div>
@@ -53,8 +57,8 @@ function App() {
                 </button>
                 <hr />
             </div>
-            <div>
-                <button onClick={onClick}>Get new palette</button>
+            <div className="generate-button">
+                <button onClick={onClick}>Generate a new palette</button>
             </div>
             <div>
                 <ColorAPI palette={palette} />
